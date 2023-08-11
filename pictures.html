@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kelly Love of My Life</title>
+
+    <style>
+
+        * {
+
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+
+        }
+        .text {
+            font-family: Courier New;
+            font-size: 20px;
+            text-align: center;
+            font-weight: bolder;
+            background-color: pink;
+            color: white;
+            border-radius: 15px;
+            margin: 5px 10px;
+            border: 2px dashed black;
+
+        }
+        .col {}
+
+
+        nav ul li {
+            list-style: none;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+        }
+
+        .around {}
+
+
+
+
+
+        .image {
+            border-radius: 10px;
+            height: 650px;
+            margin: 10px 0px 10px 13px;
+            border: 2px solid black;
+
+
+
+        }
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        a {
+            text-decoration: none;
+        }
+        .foo {
+            text-align: center;
+            background-color: lightblue;
+            color: black;
+            font-family: Courier;
+
+            font-weight: bolder;
+            border-radius: 20px;
+            padding: 10px;
+            margin: 20px 5px;
+
+
+
+
+
+
+        </style>
+
+
+
+    </head>
+
+
+
+    <body>
+
+        <div class="col">
+            <nav>
+
+                <ul>
+
+                    <li><a href="index.html"><h1 class="text">My Cute Girl <br /> [Future Wife 👀]</h1></a>
+                    </li>
+
+
+                </ul>
+            </nav>
+
+            <p class="foo center " id="gide"style="font-size=10px;display:none;">
+                Scroll Down
+            </p>
+            <h2 id="hide"style="font-size: 200px;text-align: center; display:none;margin-top:25vh;">
+
+                I <br /><br /> ❤️ <br /><br /> U</h2>
+            <p class="foo center " id="tide"style="font-size=10px;display:none;">
+                Click Here to Remove I Love You
+            </p>
+
+            <div id="icon"class="around">
+                <img class="image" src="pic1.jpg" alt="" />
+            </div>
+
+            <div class="around">
+                <img class="image" src="pic2.jpg" alt="" />
+            </div>
+
+            <div class="around">
+                <img class="image" src="pic4.jpg" alt="" />
+            </div>
+
+            <div class="around">
+                <img class="image" src="icon.jpg" alt="" style="height:300px; margin-left:40px;" />
+            </div>
+
+
+        </div>
+
+        <audio id="audio">
+            <source src="song.mp3" type="audio/mp3" />
+        </audio>
+
+        <div>
+            <a class="foo center">
+                Now Click On The First Pic😶‍🌫
+            </a>
+        </div>
+
+
+
+        <script type="text/javascript" charset="utf-8">
+
+            let icon = document.getElementById("icon");
+            let audio = document.getElementById("audio");
+            let hide = document.getElementById("hide");
+            let gide = document.getElementById("gide");
+            let tide = document.getElementById("tide");
+
+
+
+            icon.onclick = function() {
+                if (audio.paused) {
+                    audio.play();
+
+
+                    hide.style.display = "block";
+
+                    gide.style.display = "block";
+                    tide.style.display = "block";
+
+
+                } else {
+                    audio.pause();
+
+
+                }
+
+            }
+
+
+            tide.onclick = function() {
+
+
+                tide.style.display = "none"
+                hide.style.display = "none"
+                gide.style.display = "none"
+
+            }
+
+
+
+
+
+
+        </script>
+
+
+
+
+
+
+
+    </body>
+
+</html>
